@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Charm:400,700&subset=latin-ext');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #F7F7F7;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header {
+	background-color: #112F41;
+	min-width: 1024px;
+	height: 80px;
+
+}
+
+header h1 {
+	width: 20%;
+	float: left;
+	padding-left: 20px;
+	color: white;
+	line-height: 80px;
+
+
+}
+
+h1 a {
+	transition: .2s;
+}
+
+header h1 a:hover {
+
+	font-size: 33px;
+	color: #02BEC4;
+
+
+}
+
+nav {
+	float: left;
+	width: 80%;
+	padding-top: 16.5px;
+	margin: 0 auto;
+	max-width: 1024px;
+
+}
+
+ul {
+	list-style: none;
+
+}
+
+li {
+	float: left;
+	padding: 10px;
+	width: 20%;
+	text-align: center;
+}
+
+nav ul li a {
+	display: inline-block;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 22px;
+	color: #E5E5DC;
+	transition: 0.1s;
+
+}
+
+nav ul li a:hover {
+	color: white;
+	border-bottom: 2px solid #02BEC4;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.banner {
+	position: relative;
+	margin-top: 10px;
+	background-image: url(img/tlo4.jpg);
+	height: 250px;
+	background-position: center -120px;
+	/*	background-repeat: no-repeat;*/
+	background-size: cover;
+	box-shadow: 10px 10px 40px 2px #303030;
+
+}
+
+.banner h1 {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	text-align: center;
+	color: #E5A675;
+	background-color: rgba(57, 62, 70, 0.4);
+	font-size: 60px;
+	width: 100%;
+}
+
+
+
+article {
+	margin-top: 50px;
+	background-color: #FFFFF5;
+}
+
+article h2 {
+	font-size: 1.6rem;
+	padding: 12px;
+	text-align: center;
+}
+
+article p {
+	float: left;
+	width: 80%;
+	font-size: 1.1rem;
+	text-align: justify;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 135%;
+	letter-spacing: 0.5px;
+}
+
+.img {
+	float: left;
+	width: 10%;
+	height: 10vw;
+	margin-right: 20px;
+	margin-left: 20px;
+	background-image: url(img/puchar.png);
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 0 10px 2px;
+	border-radius: 20%;
+}
+
+.img2 {
+	background-image: url(img/onas.jpg);
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+.img2 + p,
+.reg + p {
+	float: none;
+	width: 80%;
+	font-size: 1.1rem;
+	text-align: justify;
+	margin: 10px auto;
+	padding: 20px 0;
+	font-family: 'Roboto', sans-serif;
+	line-height: 135%;
+	letter-spacing: 0.5px;
+
+}
+
+.bt {
+	position: fixed;
+	right: 10px;
+	bottom: 5px;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+
+	transition: .1s;
+	color: white;
+}
+
+
+
+.bt i {
+	width: 44px;
+	height: 44px;
+	color: white;
+	font-size: 25px;
+	line-height: 44px;
+
+}
+
+.bt:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+	margin-top: 50px;
+	background-color: #303030;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+
+footer p {
+	float: left;
+	font-size: 18px;
+	width: 50%;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.fb i {
+	margin-right: 5px;
+}
+
+/*o_nas.html*/
+p span {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.position {
+	position: relative;
+}
+
+.trener {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	width: 100px;
+	height: 100px;
+	background-image: url(img/trener.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+
+}
+
+.trener + p,
+.trener1 + p {
+	float: none;
+	margin-left: 15%;
+
+}
+
+.trener1 {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	width: 100px;
+	height: 100px;
+	background-image: url(img/trener2.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+
+
+
+/*regulamin.html*/
+.reg {
+	width: 100%;
+	height: 200px;
+	background-image: url(img/prawo.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.reg + p {
+	float: none;
+}
+
+/*kontakt.html*/
+
+.lkontakt {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.lkontakt p {
+	float: none;
+	width: auto;
+	font-size: 16px;
+
+}
+
+.rkontakt {
+	float: left;
+	width: 50%;
+}
+
+.gm {
+	padding: 0;
+	padding-top: 15px;
+}
+
+.gmapa {
+	padding: 20px;
+
+}
+
+iframe {
+	width: 100%;
+}
+
+.kontakt1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: red;
+}
+
+.hkontakt {
+	font-weight: 200;
+}
+
+.szczyt {
+	width: 80%;
+	height: 250px;
+	margin: 20px auto;
+	background-size: cover;
+	background-position: center;
+	background-image: url(img/szczyt.jpg);
+	box-shadow: 0 0 5px 2px;
+}
+
+.szczyt + p {
+	font-family: 'Charm', cursive;
+	padding-left: 20%;
+	text-align: center;
+	font-weight: 700;
+
+}
+
+.reg + p strong {
+	display: block;
+	padding: 5px 5px 5px 0;
+}
